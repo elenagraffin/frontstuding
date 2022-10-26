@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Угадай число!</title>
+    
+    <style>
+        div {
+        height:150px;
+        display:block;
+        background: white;
+        width:100%;
+        text-align: center;
+        font-size: 30px;
+        
+        }
+        #but1 , #but2 {
+            display: block;
+            height: 30px;
+            width: 100px;
+            background: #C777F5;
+            border-radius: 20px;
+            margin: 30px auto;
+            
+            
+        }
+        #fld, #but2, #cntr, #txt2 {
+            display: none;
+        }
+        
+        header {
+            background: #B030FA;
+            height: 50px;  
+        }
+        h1 {
+            text-align: center;
+            color: #241B29;
+        }
+        .1scr {
+            display: block;
+            height: 200px;
+            background:grey;
+            font-size:20px;
+        }
+        
+       
+            
+        }
+        
+    </style>
+</head>
+<body>
+<header>
+    <h1>Игра "Угадай число"</h1>
+</header>
+
+<main>
+    <div class="1scr"> 
+        <p id="txt1">Для начала игры нажмите кнопку</p>
+        <button type="button" id="but1">Начать игру</button>
+    </div>
+    
+    <div class="2scr"> 
+        <p id="txt2">Введите число от 1 до 100</p>
+        <input type="text" id="fld">
+        <button type="button" id="but2">Ok!</button>
+        <p id="cntr"></p>
+        <p id="txo"></p>
+    </div>
+</main>
+
+
+        
+    <script>
+        let counter = 0;
+        let quest=0;
+         document.getElementById('but1').onclick = function(){
+         counter = 0;
+         
+         quest = Math.floor(Math.random() * 100 + 1);
+        console.log(quest);
+            document.getElementById('but1').style.display = "none";
+            document.getElementById('txt1').style.display = "none";
+            document.getElementById('txt2').style.display = "block";
+            document.getElementById('but2').style.display = "inline-block";
+            document.getElementById('fld').style.display = "inline-block";
+            document.getElementById('fld').value = "";
+            document.getElementById('cntr').style.display = "block";
+            counter = 0;
+            document.getElementById('cntr').innerHTML = counter;
+            
+        }
+         document.getElementById('but2').onclick = function(){
+            counter++;
+            
+                
+                
+             
+                document.getElementById('cntr').innerHTML = counter;
+                numm=document.getElementById('fld').value;
+                console.log(numm);
+                document.getElementById('cntr').innerHTML = `Число попыток ${counter}`;
+                
+            
+                
+                if (isNaN(numm)) {
+                    document.getElementById("txo").innerHTML = "Нужно ввести число";
+                    
+                    
+                }
+                else if (quest == numm) {
+                    document.getElementById("txo").innerHTML = `Вы угадали с ${counter} попыток. Сыграем еще раз?`;
+                    document.getElementById('but2').style.display = "none";
+                    document.getElementById('fld').style.display = "none";
+                    document.getElementById('txt2').style.display = "none";
+                    document.getElementById('cntr').style.display = "none";
+                    document.getElementById('but1').style.display = "block";
+                  
+                } else if (quest > numm) {
+                    document.getElementById("txo").innerHTML = "Нужно больше";
+                } else {
+                    document.getElementById("txo").innerHTML = "Нужно меньше";
+                }
+               if(counter>=10) {document.getElementById("txo").innerHTML = "Количество попыток закончилось, сыграем еще?"; 
+               document.getElementById('but1').style.display = "inline-block";
+                document.getElementById('but2').style.display = "none";
+                document.getElementById('fld').style.display = "none";
+                document.getElementById('cntr').style.display = "none";}
+            
+           }
+    </script>
+</body>
+</html>
