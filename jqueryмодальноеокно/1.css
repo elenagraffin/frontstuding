@@ -1,0 +1,103 @@
+
+
+/* global reset */
+html, body, body div, div, span, h1, h2, h3, h4, h5, h6,
+p, a, em, img, small, strike, strong, sub, sup, b, u, i,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, button,
+table, caption, tbody, tfoot, thead, tr, th, td, aside,
+section, article, header, footer, main, input, textarea {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+    background: none;
+}
+ol, ul, li {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html * {
+    max-height: 1000000px;
+}
+input, textarea {
+    font: inherit;
+}
+button {
+    cursor: pointer;
+	border: none;
+	outline: none;
+    background: none;
+}
+html, body {
+    height: 100%;
+}
+
+/* common */
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover > span {
+    text-decoration: underline;
+}
+
+
+
+.container {
+    margin: o auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+
+
+.screener {
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+.modal {
+    background: white;
+    background-image: url("cat1.jpg" );
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    margin:0 auto;
+    width: 600px;
+    height: 400px;
+    top: 60px;
+    
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: red;
+    font-size: 40px;
+    line-height: 40px;
+    box-shadow: 0 0 5px rgba(0,0,0,.25);
+}
+.close:active {
+    box-shadow: inset 0 0 5px rgba(0,0,0,.25);
+}
+
+#modal {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    font-weight: 500;
+    color:black;
+}
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Главная страница</title>
+        
+       
+        
+        <script defer src="shjs/jquery-3.6.1.min.js"></script>
+         <script defer src="shjs/slider.js"></script>
+        <script defer src="shjs/test.js"></script>
+
+
+        <link rel="stylesheet" href="shcss/test.css">
+
+
+</head>
+<body>
+<header>
+            <section class="container">
+                <div id="city" title="Если ваш город определен неправильно, нажмите для выбора правильного города">Ваш город: <span>Москва</span></div>
+            </section>
+            <section class="container">
+                <a  href="shindex.html"><img class="logo" src="shimg/logova3.png" alt="logo"></a>
+                <p class="texl">Строим качественные дома</br> для счастливой жизни</p>
+              
+                <a href="basket.html"><img class="basket" src="shimg/корзина3.png" alt="корзина"></a>
+                
+                <a href="" title="эта часть сайта находится в разработке"><img class="intro" src="shimg/вход3.png" alt="личный кабинет"></a></a> <!-- при наведение сообщение "эта часть сайта находится в разработке"-->
+                 <form id="search">
+  <input type="text" id="search-input"  >
+  <button class="btn">
+   <img class="btn" src="shimg/sh1.png"  alt="search">
+</button>
+</form>
+            
+ <!-- search form -->               
+  
+
+
+           
+            </section>
+            <section class="container">
+                <nav class="topmenu">
+                    <a href="index.html"><span>Главная страница</span></a>
+                    <a href="#"><span>Каталог</span></a>
+                    <a href="#"><span>Товар</span></a>
+                    <a href="#"><span>Корзина</span></a>
+                    <a href="#"><span>Контакты</span></a>
+                </nav>
+            </section>
+        
+
+</form>
+</header>
+  <main>
+            <!-- action block -->
+            <section class="action">
+                <div class="container">
+                    <p>Успейте заказать Дом под ключ у нас, получите проект в подарок!</p>
+                    <p>
+                        До окончания осталось:
+                        <span class="actiontimer" data-actionend="2022-11-10T12:00:00">&nbsp;</span>
+                    </p>
+                </div>
+            </section>
+            <!-- /action block -->
+            <!-- slider block -->
+            <section class="slider" id="slider1">
+                <div class="slider_desk">
+                    <div class="slider_block">
+                        <img src="shimg/dom1.jpg" alt="pic 1">
+                    </div>
+                    
+                    <div class="slider_block">
+                        <img src="shimg/dom2.png" alt="pic 2">
+                    </div>
+                    
+                    <div class="slider_block">
+                        <img src="shimg/dom3.png" alt="pic 3">
+                    </div>
+                    <div class="slider_block">
+                        <img src="shimg/dom4.png" alt="pic 4">
+                    </div>
+                    <div class="slider_block">
+                        <img src="shimg/dom5.png" alt="pic 5">
+                    </div>
+                </div>
+                
+                <button type="button" class="to_left icon"></button>
+                
+                <button type="button" class="to_right icon"></button>
+                
+                <div class="slider_points"></div>
+            </section>
+            <!-- /slider block -->
+            <!-- slider block -->
+            <section class="slider" id="slider2">
+                <div class="slider_desk">
+                    <div class="slider_block" style="background:red">
+                        <p>Some text without pictures.</p>
+                        <p>Some text without pictures.</p>
+                        <p>Some text without pictures.</p>
+                    </div>
+                    
+                    <div class="slider_block" style="background:green">
+                        <p>Some text without pictures.</p>
+                        <p>Some text without pictures.</p>
+                        <p>Some text without pictures.</p>
+                    </div>
+                    
+                    <div class="slider_block" style="background:blue">
+                        <p>Some text without pictures.</p>
+                        <p>Some text without pictures.</p>
+                        <p>Some text without pictures.</p>
+                    </div>
+                </div>
+                
+                <button type="button" class="to_left icon"></button>
+                
+                <button type="button" class="to_right icon"></button>
+                
+                <div class="slider_points"></div>
+            </section>
+            <!-- /slider block -->
+            <section class="container">Какой-нибудь контент</section>
+        </main>
+        
+        <footer>
+            <section class="container">Меню столбиками</section>
+            <section class="container">Строка копирайта</section>
+        </footer>
+ 
+</body>
+</html>
