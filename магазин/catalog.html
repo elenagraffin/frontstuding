@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Главная страница</title>
+        
+       
+        
+        <script defer src="shjs/jquery-3.6.1.min.js"></script>
+        <script defer src="shjs/jquery-ui.min.js"></script>
+         <script defer src="shjs/slider.js"></script>
+        <script defer src="shjs/test.js"></script>
+
+        <link rel="stylesheet" href="shcss/jquery-ui.css">
+        <link rel="stylesheet" href="shcss/test.css">
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</head>
+<body>
+<header>
+            <section  class="container"> 
+<!---->  <!--город-->
+            <div class="hd1">          
+                <div id="city" title="Если ваш город определен неправильно, нажмите для выбора правильного города">Ваш город: <span>Москва</span></div>
+ <!--часы работы--> 
+                <div id="hours" title="">Мы работаем: <span>с 10.00 до 20.00</span></div>
+ <!--кнопка позвонить-->                   
+                <div id="tel" title="Нажмите, чтобы связаться с нами.">&#128381 </div>
+            </div>  
+            </section>
+            
+            
+            <section class="container">
+            <div class="hd2">    
+<!--Лого-->     
+                <a  href="test.html"><img class="logo" src="shimg/logova3.png" alt="logo"></a>
+  <!--Слоган-->              
+                <p class="texl">Строим качественные дома</br> для счастливой жизни</p>
+   <!--Поиск-->    
+                <div class="searchfl">
+      <input type="text"  placeholder="" class="searchbar">
+      <img src="поиск1.png" alt="search icon" class="button">
+    </div>
+                
+   <!--Корзина-->    
+                <a href="basket.html"><img class="basket" src="shimg/корзина3.png" alt="корзина"></a>
+   <!--Вход в личный кабинет-->             
+                <a href="" title="эта часть сайта находится в разработке"><img class="intro" src="shimg/вход3.png" alt="личный кабинет"></a></a> <!-- при наведение сообщение "эта часть сайта находится в разработке"-->
+                 
+            
+             
+  
+
+
+            </div>
+            </section>
+  <!--Меню сайта-->          
+            <section class="container">
+            <div class="hd3">
+                <nav class="topmenu">
+                    <a href="test.html"><span>Главная страница</span></a>
+                    <a href="catalog.html"><span>Каталог</span></a>
+                    <a href="#"><span>Товар</span></a>
+                    <a href="#"><span>Корзина</span></a>
+                    <a href="#"><span>Контакты</span></a>
+                </nav>
+                </div>
+            </section>
+        
+
+</form>
+</header>
+   <main class="catalog">
+            <section class="container">
+                <aside>
+                    <!--<nav class="querymenu">
+                        <p>Каталог</p>
+                        <div id="acco">
+                            <div class="acco_h">
+                                <a href="#"><span>Подкаталог 1</span></a>
+                            </div>
+                            <div class="acco_c"></div>
+                            <div class="acco_h">
+                                <a href="#"><span>Подкаталог 2</span></a>
+                            </div>
+                            <div class="acco_c">
+                                <a href="#"><span>Субкаталог 21</span></a>
+                                <a href="#"><span>Субкаталог 22</span></a>
+                                <a href="#"><span>Субкаталог 23</span></a>
+                            </div>
+                            <div class="acco_h">
+                                <a href="#"><span>Подкаталог 3</span></a>
+                            </div>
+                            <div class="acco_c">
+                                <a href="#"><span>Субкаталог 31</span></a>
+                                <a href="#"><span>Субкаталог 32</span></a>
+                                <a href="#"><span>Субкаталог 33</span></a>
+                                <a href="#"><span>Субкаталог 34</span></a>
+                                <a href="#"><span>Субкаталог 35</span></a>
+                                <a href="#"><span>Субкаталог 36</span></a>
+                            </div>
+                            <div class="acco_h">
+                                <a href="#"><span>Подкаталог 4</span></a>
+                            </div>
+                            <div class="acco_c">
+                                <a href="#"><span>Субкаталог 41</span></a>
+                            </div>
+                            <div class="acco_h">
+                                <a href="#"><span>Подкаталог 5</span></a>
+                            </div>
+                            <div class="acco_c"></div>
+                            <div class="acco_h">
+                                <a href="#"><span>Подкаталог 6</span></a>
+                            </div>
+                            <div class="acco_c"></div>
+                        </div>
+                    </nav>-->
+                    <!-- catmenu -->
+                    <!-- <nav class="catmenu simple"> -->
+                    <nav class="catmenu">
+                        <p>Каталог</p>
+                        <ul>
+                            <li>
+                                <a href="#"><span>Все дома</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Дома из блока</span></a>
+                                
+                                <ul>
+                                    <li>
+                                        <a href="#"><span>Дома до 70м²</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Дома от 70м² до 120м²</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Дома от 120м² до 170м²</span></a>
+                                    </li>
+                                     <li>
+                                        <a href="#"><span>Дома от 170м²</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                                 <li>
+                                <a href="#"><span>Дома по каркасной технологии</span></a>
+                                
+                                <ul>
+                                    <li>
+                                        <a href="#"><span>Дома до 70м²</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Дома от 70м² до 120м²</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Дома от 120м² до 170м²</span></a>
+                                    </li>
+                                     <li>
+                                        <a href="#"><span>Дома от 170м²</span></a>
+                                    </li>
+                                </ul>
+                        
+                            </li>
+                             <li>
+                                <a href="#"><span>Дома из бруса</span></a>
+                                
+                                <ul>
+                                    <li>
+                                        <a href="#"><span>Дома до 70м²</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Дома от 70м² до 120м²</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Дома от 120м² до 170м²</span></a>
+                                    </li>
+                                     <li>
+                                        <a href="#"><span>Дома от 170м²</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>Бани</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Садовые домики</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Мобильные дома</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- /catmenu -->
+                    <div class="filters">
+                        <p>Фильтры</p>
+                        <p>
+                            <label for="amount">Цена от</label>
+                            <input type="text" id="amount1">
+                            <label for="amount">до</label>
+                            <input type="text" id="amount2">
+                        </p>          
+                        <div id="slider-range"></div>
+                        <p>
+                             
+                            <label for="amount">Площадь от м²</label>
+                            <input type="text" id="amount3">
+                            <label for="amount">до м²</label>
+                            <input type="text" id="amount4">
+                            
+                        </p>          
+                        <div id="slider-sq"></div>
+                         <p>
+                            <label>Количество этажей</label>
+                            
+                            <div><label for="radio-4"><input class="filterbal" id="radio-4" type="checkbox" name="radio" value="1" >Неважно</label></div>
+                            
+                            <div><label for="radio-1"><input class="filterbal" id="radio-1" type="checkbox" name="radio" value="1" >1</label></div>
+                            
+                            <div><label for="radio-2"><input class="filterbal" id="radio-2" type="checkbox" name="radio" value="2">2</label></div>
+                            
+                            <div><label for="radio-3"><input class="filterbal" id="radio-3" type="checkbox" name="radio" value="2">3</label></div>
+                        </p> 
+                         <p>
+                            <label>Количество спален</label>
+                            
+                            <div><label for="radio-4"><input class="filterbal" id="radio-4" type="checkbox" name="radio" value="1" >Неважно</label></div>
+                            
+                            <div><label for="radio-1"><input class="filterbal" id="radio-1" type="checkbox" name="radio" value="1" >1</label></div>
+                            
+                            <div><label for="radio-2"><input class="filterbal" id="radio-2" type="checkbox" name="radio" value="2">2</label></div>
+                            
+                            <div><label for="radio-5"><input class="filterbal" id="radio-5" type="checkbox" name="radio" value="2">4</label></div>
+                            <div><label for="radio-6"><input class="filterbal" id="radio-6" type="checkbox" name="radio" value="2">5</label></div>
+                            <div><label for="radio-7"><input class="filterbal" id="radio-7" type="checkbox" name="radio" value="2">6</label></div>
+                        </p> 
+                         <p>
+                            <label>Количество этажей</label>
+                            
+                            <div><label for="radio-4"><input class="filterbal" id="radio-4" type="checkbox" name="radio" value="1" >Неважно</label></div>
+                            
+                            <div><label for="radio-1"><input class="filterbal" id="radio-1" type="checkbox" name="radio" value="1" >1</label></div>
+                            
+                            <div><label for="radio-2"><input class="filterbal" id="radio-2" type="checkbox" name="radio" value="2">2</label></div>
+                            
+                            <div><label for="radio-3"><input class="filterbal" id="radio-3" type="checkbox" name="radio" value="2">3</label></div>
+                        </p> 
+                        
+                        <p>
+                            <label>Терасса</label>
+                            <div><label for="radio-1"><input class="filterter" id="radio-1" type="radio" name="radio" value="1" >Неважно</label></div>
+                            
+                            <div><label for="radio-2"><input class="filterter" id="radio-2" type="radio" name="radio" value="2">Да</label></div>
+                            
+                            <div><label for="radio-3"><input class="filterter" id="radio-3" type="radio" name="radio" value="2">Нет</label></div>
+                        </p>
+                        <p>
+                            <label>Балкон</label>
+                            <div><label for="radio-1"><input class="filterbal" id="radio-1" type="radio" name="radio" value="1" >Неважно</label></div>
+                            
+                            <div><label for="radio-2"><input class="filterbal" id="radio-2" type="radio" name="radio" value="2">Да</label></div>
+                            
+                            <div><label for="radio-3"><input class="filterbal" id="radio-3" type="radio" name="radio" value="2">Нет</label></div>
+                        </p>
+                    </div>
+                </aside>
+                
+                <article>
+                    <div class="cat-item"></div>
+                    <div class="cat-item"></div>
+                    <div class="cat-item"></div>
+                    <div class="cat-item"></div>
+                    <div class="cat-item"></div>
+                    <div class="cat-item"></div>
+                    <div class="cat-item"></div>
+                    <div class="cat-item"></div>
+                    <div class="cat-item"></div>
+                    <div class="cat-item"></div>
+                    <div class="cat-item"></div>
+                    <div class="cat-item"></div>
+                </article>
+            </section>
+        </main>
+        
+        <footer>
+             <footer>
+        
+    <div class="footerwr">
+  <!--  <div class="waves">
+        <div class="wave" id="wave1"></div>
+    </div>-->
+   
+    <ul class="menufooter">
+        
+                       
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Страница товара</a></li>
+        <li><a href="#">Корзина</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+    <ul class="info">
+       
+                       
+        <li><a href="#">Интересная статья</a></li>
+        <li><a href="#">Захватывающая статья</a></li>
+        <li><a href="#">Потрясающая статья</a></li>
+        
+    </ul>
+     <ul class="social">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-linkedin"><ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+    </ul>
+    </div>
+    <p>©2022 Elena Astahova | All Rights Reserved</p>
+    
+</footer>
+        </footer>
+ 
+</body>
+</html>
