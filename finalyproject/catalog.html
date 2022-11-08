@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Каталог</title>
+        <link rel="icon" type="image/png" href="images/indexicon.png">
+
+        
+        <script defer src="js/jquery-3.6.1.min.js"></script>
+        <script defer src="js/jquery-ui.min.js"></script>
+        <script defer src="js/slider.js"></script>
+        <script defer src="js/main.js"></script>
+
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/css.css">
+        
+        
+       <link rel="stylesheet" href="css/css.css">
+        
+       
+    </head>
+    
+    <body>
+         <header>
+            <section  class="container"> 
+            <!---->  <!--город-->
+            <div class="hd1">          
+                <div id="city" title="Если ваш город определен неправильно, нажмите для выбора правильного города">Ваш город: <span>Москва</span></div>
+            <!--часы работы--> 
+                <div id="hours" title="">Мы работаем: <span>с 10.00 до 20.00</span></div>
+            <!--кнопка позвонить-->                   
+                <div id="tel" title="Нажмите, чтобы связаться с нами.">&#128381 </div>
+            </div>  
+            </section>
+            
+            
+            <section class="container">
+            <div class="hd2">    
+            <!--Лого-->     
+                <a  href="index.html"><img class="logo" src="images/logova3.png" alt="logo"></a>
+        <!--Слоган-->              
+                <p class="texl">Строим качественные дома</br> для счастливой жизни</p>
+        <!--Поиск-->    
+                <div class="searchfl">
+        <input type="text"  placeholder="" class="searchbar">
+        <img src="images/поиск1.png" alt="search icon" class="button">
+        </div>
+                
+        <!--Корзина-->    
+                <a href="cart.html" id="basket"><img class="basket" src="images/корзина3.png" alt="корзина"></a>
+        <!--Вход в личный кабинет-->             
+                <a href="" title="эта часть сайта находится в разработке"><img class="intro" src="images/вход3.png" alt="личный кабинет"></a></a> <!-- при наведение сообщение "эта часть сайта находится в разработке"-->
+                 
+            
+             
+        
+        
+        
+            </div>
+            </section>
+        <!--Меню сайта-->          
+            <section class="container">
+            <div class="hd3">
+                <nav class="topmenu">
+                    <a href="index.html"><span>Главная страница</span></a>
+                    <a href="catalog.html"><span>Каталог</span></a>
+                    <a href="product1.html"><span>Товар</span></a>
+                    <a href="cart.html"><span>Корзина</span></a>
+                    <a href="contacts.html"><span>Контакты</span></a>
+                </nav>
+                </div>
+            </section>
+        
+        
+        </form>
+        </header>
+        
+        <main class="catalog">
+            <section class="container">
+                <aside>
+                   
+                    <nav class="catmenu">
+                        <p>Каталог</p>
+                        <ul>
+                            <li>
+                                <a href="#"><span>Все дома</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Дома из блока</span></a>
+                                
+                                <ul>
+                                    <li>
+                                        <a href="#"><span>Дома до 70м²</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Дома от 70м² до 120м²</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Дома от 120м² до 170м²</span></a>
+                                    </li>
+                                     <li>
+                                        <a href="#"><span>Дома от 170м²</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                                 <li>
+                                <a href="#"><span>Дома по каркасной технологии</span></a>
+                                
+                                <ul>
+                                    <li>
+                                        <a href="#"><span>Дома до 70м²</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Дома от 70м² до 120м²</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Дома от 120м² до 170м²</span></a>
+                                    </li>
+                                     <li>
+                                        <a href="#"><span>Дома от 170м²</span></a>
+                                    </li>
+                                </ul>
+                        
+                            </li>
+                             <li>
+                                <a href="#"><span>Дома из бруса</span></a>
+                                
+                                <ul>
+                                    <li>
+                                        <a href="#"><span>Дома до 70м²</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Дома от 70м² до 120м²</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Дома от 120м² до 170м²</span></a>
+                                    </li>
+                                     <li>
+                                        <a href="#"><span>Дома от 170м²</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>Бани</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Садовые домики</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Мобильные дома</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- /catmenu -->
+                    <div class="filters">
+                        <p>Фильтры</p>
+                        <p>
+                            <label for="amount">Цена от</label>
+                            <input type="text" id="amount1">
+                            <label for="amount">до</label>
+                            <input type="text" id="amount2">
+                        </p>          
+                        <div id="slider-range"></div>
+                        <p>
+                             
+                            <label for="amount">Площадь от м²</label>
+                            <input type="text" id="amount3">
+                            <label for="amount">до м²</label>
+                            <input type="text" id="amount4">
+                            
+                        </p>          
+                        <div id="slider-sq"></div>
+                         <p>
+                            <label>Количество этажей</label>
+                            
+                            <div><label for="radio-4"><input class="filterbal" id="radio-4" type="checkbox" name="radio" value="1" >Неважно</label></div>
+                            
+                            <div><label for="radio-1"><input class="filterbal" id="radio-1" type="checkbox" name="radio" value="1" >1</label></div>
+                            
+                            <div><label for="radio-2"><input class="filterbal" id="radio-2" type="checkbox" name="radio" value="2">2</label></div>
+                            
+                            <div><label for="radio-3"><input class="filterbal" id="radio-3" type="checkbox" name="radio" value="2">3</label></div>
+                        </p> 
+                         <p>
+                            <label>Количество спален</label>
+                            
+                            <div><label for="radio-4"><input class="filterbal" id="radio-4" type="checkbox" name="radio" value="1" >Неважно</label></div>
+                            
+                            <div><label for="radio-1"><input class="filterbal" id="radio-1" type="checkbox" name="radio" value="1" >1</label></div>
+                            
+                            <div><label for="radio-2"><input class="filterbal" id="radio-2" type="checkbox" name="radio" value="2">2</label></div>
+                            
+                            <div><label for="radio-5"><input class="filterbal" id="radio-5" type="checkbox" name="radio" value="2">4</label></div>
+                            <div><label for="radio-6"><input class="filterbal" id="radio-6" type="checkbox" name="radio" value="2">5</label></div>
+                            <div><label for="radio-7"><input class="filterbal" id="radio-7" type="checkbox" name="radio" value="2">6</label></div>
+                        </p> 
+                         <p>
+                            <label>Количество этажей</label>
+                            
+                            <div><label for="radio-4"><input class="filterbal" id="radio-4" type="checkbox" name="radio" value="1" >Неважно</label></div>
+                            
+                            <div><label for="radio-1"><input class="filterbal" id="radio-1" type="checkbox" name="radio" value="1" >1</label></div>
+                            
+                            <div><label for="radio-2"><input class="filterbal" id="radio-2" type="checkbox" name="radio" value="2">2</label></div>
+                            
+                            <div><label for="radio-3"><input class="filterbal" id="radio-3" type="checkbox" name="radio" value="2">3</label></div>
+                        </p> 
+                        
+                        <p>
+                            <label>Терасса</label>
+                            <div><label for="radio-1"><input class="filterter" id="radio-1" type="radio" name="radio" value="1" >Неважно</label></div>
+                            
+                            <div><label for="radio-2"><input class="filterter" id="radio-2" type="radio" name="radio" value="2">Да</label></div>
+                            
+                            <div><label for="radio-3"><input class="filterter" id="radio-3" type="radio" name="radio" value="2">Нет</label></div>
+                        </p>
+                        <p>
+                            <label>Балкон</label>
+                            <div><label for="radio-1"><input class="filterbal" id="radio-1" type="radio" name="radio" value="1" >Неважно</label></div>
+                            
+                            <div><label for="radio-2"><input class="filterbal" id="radio-2" type="radio" name="radio" value="2">Да</label></div>
+                            
+                            <div><label for="radio-3"><input class="filterbal" id="radio-3" type="radio" name="radio" value="2">Нет</label></div>
+                        </p>
+                    </div>
+                </aside>
+                
+                <article class="catitems">
+                    <div class="cat-item">
+                            <img src="images/dom2.png" alt="dom" style=" width: 270px;
+                            height: 290px;">
+                                <div class="domcat">
+                                <a href="product1.html"><h3>Дом с бассейном</h3></a>
+                                </div>
+                                <div class="price1">
+                                <p>9000000 &#8381;</p>
+                            </div>
+                            <button id="butcat" >Добавить в корзину</button> 
+                    </div>
+                    <div class="cat-item">
+                        <img src="images/dom3.jpg" alt="dom" style=" width: 270px;
+                        height: 290px;">
+                            <div class="domcat">
+                            <a href="product2.html"><h3>Дом 12*10</h3></a>
+                            </div>
+                            <div class="price1">
+                            <p>5600000 &#8381;</p>
+                        </div>
+                        <button id="butcat">Добавить в корзину</button> 
+                </div>
+                <div class="cat-item">
+                    <img src="images/dom4.png" alt="dom" style=" width: 270px;
+                    height: 290px;">
+                        <div class="domcat">
+                        <a href="product.html"><h3>Просторный дом с пингвинами</h3></a>
+                        </div>
+                        <div class="price1">
+                        <p>25000000 &#8381;</p>
+                    </div>
+                    <button id="butcat">Добавить в корзину</button> 
+            </div>
+            <div class="cat-item">
+                <img src="images/dom5.jpg" alt="dom" style=" width: 270px;
+                height: 290px;">
+                    <div class="domcat">
+                    <a href="product.html"><h3>Дом с терассами</h3></a>
+                    </div>
+                    <div class="price1">
+                    <p>14370000 &#8381;</p>
+                </div>
+                <button id="butcat">Добавить в корзину</button> 
+        </div>
+        <div class="cat-item">
+            <img src="images/dom6.jpg" alt="dom" style=" width: 270px;
+            height: 290px;">
+                <div class="domcat">
+                <a href="product.html"><h3>Красивый дом 10*10</h3></a>
+                </div>
+                <div class="price1">
+                <p>7900000 &#8381;</p>
+            </div>
+            <button id="butcat">Добавить в корзину</button> 
+    </div>
+    <div class="cat-item">
+        <img src="images/dom7.jpg" alt="dom" style=" width: 270px;
+        height: 290px;">
+            <div class="domcat">
+            <a href="product.html"><h3>Дом 13*15</h3></a>
+            </div>
+            <div class="price1">
+            <p>17000000 &#8381;</p>
+        </div>
+        <button id="butcat">Добавить в корзину</button> 
+</div>
+                   
+                </article>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footerwr">
+      
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <ul class="menufooter">
+                
+                               
+                <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="product1.html">Страница товара</a></li>
+          <li><a href="cart.html">Корзина</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="info">
+               
+                               
+                <li><a href="#">Интересная статья</a></li>
+                <li><a href="#">Захватывающая статья</a></li>
+                <li><a href="#">Потрясающая статья</a></li>
+                
+            </ul>
+             <ul class="social">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"><ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+            </div>
+            <p>©2022 Elena Astahova | All Rights Reserved</p>
+            
+        </footer>
+    </body>
+</html>

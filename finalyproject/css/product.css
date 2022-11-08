@@ -1,0 +1,112 @@
+/* breadcrumbs */
+.breadcrumbs {
+    padding: 10px;
+    height: 20px;
+}
+.breadcrumbs li {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+    margin-right: 10px;
+    position: relative;
+    font-size: 12px;
+    line-height: 20px;
+}
+.breadcrumbs a::after {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 20px;
+    content: '\203a';
+    text-align: center;
+    font-size: 20px;
+    line-height: 16px;
+}
+/* product */
+.product {
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+    color: #1e366d;
+}
+.images {
+    flex: 0 0 470px;
+    width: calc(50%-50px);
+}
+.bigimage {
+   width: calc(50%-50px);
+    /*height: 550px;*/
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    border: 1px solid #1e366d;
+    padding: 9px;
+}
+.gallery {
+    width: 440px;
+    height: 50px;
+    margin-top: 20px;
+    padding: 0 15px;
+    position: relative;
+}
+.gallery button {
+    width: 15px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    color: #1e366d;
+}
+.gallery .disabled {
+    cursor: default;
+    opacity: .3;
+}
+.gallery button:hover {
+    color: black;
+}
+.gallery .disabled:hover {
+    color:#1e366d;
+}
+.gallery .gal_left {
+    left: 0;
+}
+.gallery .gal_right {
+    right: 0;
+}
+.gallery button span {
+    font: bold 50px/50px 'Roboto';
+    display: inline-block;
+    margin-top: -9px;
+}
+.gallery > div {
+    width: 440px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+.gallery .rail {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+}
+.price {
+    color: rgb(129, 21, 21);
+    font-size: 50px;
+    line-height: 70px;
+}
+.price span::after {
+    content: '\20BD'
+}
+.addbtn {
+    background: #4074ee;
+    margin: 10px;
+    margin-left: 0;
+    padding: 5px;
+    box-shadow: 3px 3px 3px  #1e3a7c;
+    font-size: 20px;
+}

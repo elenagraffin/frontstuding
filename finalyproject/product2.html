@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Карточка товара</title>
+        <link rel="icon" type="image/png" href="images/indexicon.png">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/css.css">
+        
+        
+        <script defer src="js/jquery-3.6.1.min.js"></script>
+        <script defer src="js/jquery-ui.min.js"></script>
+        <script defer src="js/gallery.js"></script>
+        <script defer src="js/lightbox.js"></script>
+        <script defer src="js/main.js"></script>
+        
+    </head>
+    
+    <body>
+        <header>
+            <section  class="container"> 
+        <!---->  <!--город-->
+            <div class="hd1">          
+                <div id="city" title="Если ваш город определен неправильно, нажмите для выбора правильного города">Ваш город: <span>Москва</span></div>
+        <!--часы работы--> 
+                <div id="hours" title="">Мы работаем: <span>с 10.00 до 20.00</span></div>
+        <!--кнопка позвонить-->                   
+                <div id="tel" title="Нажмите, чтобы связаться с нами.">&#128381 </div>
+            </div>  
+            </section>
+            
+            
+            <section class="container">
+            <div class="hd2">    
+        <!--Лого-->     
+                <a  href="index.html"><img class="logo" src="images/logova3.png" alt="logo"></a>
+        <!--Слоган-->              
+                <p class="texl">Строим качественные дома</br> для счастливой жизни</p>
+        <!--Поиск-->    
+                <div class="searchfl">
+        <input type="text"  placeholder="" class="searchbar">
+        <img src="images/поиск1.png" alt="search icon" class="button">
+        </div>
+                
+        <!--Корзина-->    
+                <a href="cart.html"><img class="basket" src="images/корзина3.png" alt="корзина"></a>
+        <!--Вход в личный кабинет-->             
+                <a href="" title="эта часть сайта находится в разработке"><img class="intro" src="images/вход3.png" alt="личный кабинет"></a></a> <!-- при наведение сообщение "эта часть сайта находится в разработке"-->
+                 
+            
+             
+        
+        
+        
+            </div>
+            </section>
+        <!--Меню сайта-->          
+            <section class="container">
+            <div class="hd3">
+                <nav class="topmenu">
+                    <a href="index.html"><span>Главная страница</span></a>
+                    <a href="catalog.html"><span>Каталог</span></a>
+                    <a href="product1.html"><span>Товар</span></a>
+                    <a href="cart.html"><span>Корзина</span></a>
+                    <a href="contacts.html"><span>Контакты</span></a>
+                </nav>
+                </div>
+            </section>
+        
+        
+        </form>
+        </header>
+
+        <main>
+            <section class="container">
+                <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="index.html">
+                            <span itemprop="name">Главная страница</span>
+                        </a>
+                        <meta itemprop="position" content="1">
+                        <link itemprop="url" href="index.html">
+                    </li>
+                    
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="catalog.html">
+                            <span itemprop="name">Каталог</span>
+                        </a>
+                        <meta itemprop="position" content="2">
+                        <link itemprop="url" href="catalog.html">
+                    </li>
+                    
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <span itemprop="name">Товар</span>
+                        <meta itemprop="position" content="3">
+                        <link itemprop="url" href="product.html">
+                    </li>
+                </ul>
+            </section>
+            
+            <section class="container">
+                <div class="product" data-product-id="2" itemscope itemtype="https://schema.org/Product">
+                    <div class="images">
+                        <div class="bigimage">
+                            <img src="images/5.png" alt="dom">
+                        </div>
+                        
+                        <div class="gallery">
+                            <div>
+                                <div class="rail">
+                                    
+                                    <img src="images/2.jpg" alt="house">
+                                    <img src="images/3.jpg" alt="house">
+                                    <img src="images/4.png" alt="house">
+                                    <img src="images/5.png" alt="house">
+                                    <img src="images/6.png" alt="house">
+                                    <img src="images/7.png" alt="house">
+                                    <img src="images/9.jpg" alt="house">
+                                    <img src="images/8.jpg" alt="house">
+                                    
+                                </div>
+                            </div>
+                            <button type="button" class="gal_left disabled"><span>&#8249;</span></button>
+                            <button type="button" class="gal_right"><span>&#8250;</span></button>
+                        </div>
+                    </div>
+                    
+                    <div class="offer">
+                        <h1 itemprop="name">Дом 10*10</h1>
+                        <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="price">16000000</span>
+                            <meta itemprop="priceCurrency" content="RUB">
+                        </p>
+                        <button type="button"  class="btn btn-danger btn-buy">КУПИТЬ</button>
+                        <div class="desc">
+                        <p itemprop="description"><u>Описание товара:</u></p>
+                        <p>Просторный дом с большим обьемом воздушного простравнсва</p>
+                        <p>Очень важная характеристика, которая все решает </p>
+                        
+                        
+                        
+                        <p itemprop="description"><u>Характеристики:</u></p>
+                        <p>Площаль 200 кв.м</p>
+                        <p>Терасса 40 кв.м</p>
+                        <p>2 санузла</p>
+                        <p>4 спальни</p>
+                        
+                    </div>
+                </div>
+             </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footerwr">
+      
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <ul class="menufooter">
+                
+                               
+                <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="product1.html">Страница товара</a></li>
+          <li><a href="cart.html">Корзина</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="info">
+               
+                               
+                <li><a href="#">Интересная статья</a></li>
+                <li><a href="#">Захватывающая статья</a></li>
+                <li><a href="#">Потрясающая статья</a></li>
+                
+            </ul>
+             <ul class="social">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"><ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+            </div>
+            <p>©2022 Elena Astahova | All Rights Reserved</p>
+            
+        </footer>
+    </body>
+</html>

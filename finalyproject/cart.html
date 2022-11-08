@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Каталог</title>
+        <link rel="icon" type="image/png" href="images/indexicon.png">
+
+	   
+        <link rel="stylesheet" href="css/css.css">
+        
+        
+        <script defer src="js/jquery-3.6.1.min.js"></script>
+        <script defer src="js/jquery-ui.min.js"></script>
+        <script defer src="js/slider.js"></script>
+        <script defer src="js/main.js"></script>
+        <script defer src="js/calendar.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <section  class="container"> 
+        <!---->  <!--город-->
+            <div class="hd1">          
+                <div id="city" title="Если ваш город определен неправильно, нажмите для выбора правильного города">Ваш город: <span>Москва</span></div>
+        <!--часы работы--> 
+                <div id="hours" title="">Мы работаем: <span>с 10.00 до 20.00</span></div>
+        <!--кнопка позвонить-->                   
+                <div id="tel" title="Нажмите, чтобы связаться с нами.">&#128381 </div>
+            </div>  
+            </section>
+            
+            
+            <section class="container">
+            <div class="hd2">    
+        <!--Лого-->     
+                <a  href="index.html"><img class="logo" src="images/logova3.png" alt="logo"></a>
+        <!--Слоган-->              
+                <p class="texl">Строим качественные дома</br> для счастливой жизни</p>
+        <!--Поиск-->    
+                <div class="searchfl">
+        <input type="text"  placeholder="" class="searchbar">
+        <img src="images/поиск1.png" alt="search icon" class="button">
+        </div>
+                
+        <!--Корзина-->    
+                <a href="cart.html" id="basket"><img class="basket" src="images/корзина3.png" alt="корзина"></a>
+        <!--Вход в личный кабинет-->             
+                <a href="" title="эта часть сайта находится в разработке"><img class="intro" src="images/вход3.png" alt="личный кабинет"></a></a> <!-- при наведение сообщение "эта часть сайта находится в разработке"-->
+                 
+            
+             
+        
+        
+        
+            </div>
+            </section>
+        <!--Меню сайта-->          
+            <section class="container">
+            <div class="hd3">
+                <nav class="topmenu">
+                    <a href="index.html"><span>Главная страница</span></a>
+                    <a href="catalog.html"><span>Каталог</span></a>
+                    <a href="product1.html"><span>Товар</span></a>
+                    <a href="cart.html"><span>Корзина</span></a>
+                    <a href="contacts.html"><span>Контакты</span></a>
+                </nav>
+                </div>
+            </section>
+        
+        
+        </form>
+        </header>
+        
+        <main class="order">
+            <section class="container">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="index">#</th>
+                            <th scope="col" class="name">Название</th>
+                          <th scope="col" class="qty">Количество</th>-->
+                           <th scope="col" class="price">Цена</th>
+                           
+                            <th scope="col" class="delete">Удалить</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- список товаров генерим на лету -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                        <th scope="col" class="index"></th>
+                        <th scope="col" class="allsum" colspan="5">
+                            Итого:
+                            <span></span>
+                        </th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            
+            <section class="container">
+                <form name="myform">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mail" class="form-label">Ваша почта</label>
+                        <input type="text" class="form-control" id="mail" name="mail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Ваш телефон</label>
+                        <input type="text" class="form-control" id="phone" name="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="addr" class="form-label">Ваш адрес</label>
+                        <input type="text" class="form-control" id="addr" name="addr">
+                    </div>
+                    <label for="date" class="form-label">Желаемая дата доставки</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="date" name="date" readonly>
+                        <button class="btn btn-outline-secondary icon" type="button">	
+                            &#128467;</button>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comm" class="form-label">Комментарий</label>
+                        <textarea class="form-control" id="comm" name="comm" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="agree" name="agree" checked>
+                        <label class="form-check-label" for="agree">Согласен на обработку моих персональных данных.</label>
+                    </div>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-primary submit">Оформить заказ</button>
+                    </div>
+                </form>
+            </section>
+            
+            <section class="container empty">
+                <h1>Ваша корзина пуста.</h1>
+                <p>Выберите товары в каталоге или при помощи поиска.</p>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footerwr">
+      
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <ul class="menufooter">
+                
+                               
+                
+                <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="product1.html">Страница товара</a></li>
+          <li><a href="cart.html">Корзина</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="info">
+               
+                               
+                <li><a href="#">Интересная статья</a></li>
+                <li><a href="#">Захватывающая статья</a></li>
+                <li><a href="#">Потрясающая статья</a></li>
+                
+            </ul>
+             <ul class="social">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"><ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+            </div>
+            <p>©2022 Elena Astahova | All Rights Reserved</p>
+            
+        </footer>
+    </body>
+</html>
